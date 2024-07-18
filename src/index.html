@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<!-- C4D3F6 -->
+<body class="bg-[#fff]">
+    <div class="container m-auto">
+        <div class="wrapper flex flex-col justify-center items-center  md:w-[80%] m-auto ">
+            <!-- filter inputs -->
+             <div class="filter-inputs flex mt-5 space-x-5 w-full">
+                <input type="text" id = "nameFilter" class = "mb-4 p-2 border border-gray-300 rounded-lg w-full focus:outline-[#CDE8E5] focus:ring focus:ring-[#CDE8E5] focus:ring-opacity-50"
+                 placeholder="Filter by customer name..." data-name = "">
+                <input type="number" id="amountFilter" class = "mb-4 p-2 border border-gray-300 rounded-lg w-full  focus:outline-[#CDE8E5] focus:ring focus:ring-[#CDE8E5] focus:ring-opacity-50" 
+                placeholder="Filter by transaction amount..." data-amount = "">
+
+             </div>
+            <div class="table m-auto w-full shadow-xl rounded-b-lg">
+                <!-- 6c7ae0 -->
+                <div class="thead bg-[#7AB2B2] py-4 rounded-t-lg">
+                    <div class="head-row flex text-white justify-evenly items-center">
+                        <div class="cell capitalize ">customer id</div>
+                        <div class="cell capitalize">customer name</div>
+                        <div class="cell capitalize">transaction date</div>
+                        <div class="cell capitalize">transcation amount</div>
+                    </div>
+                </div>
+                <div class="tbody text-[#666666] bg-white rounded-b-lg">   
+                </div>
+            </div>
+            <canvas id="transPerDateChart" class="w-[400px] h-[200px] my-5 bg-white"></canvas>
+        </div>
+    
+    </div>
+
+
+  <script src="./JS/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./JS/script.js"></script>
+</body>
+</html>

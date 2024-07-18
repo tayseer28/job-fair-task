@@ -1,0 +1,27 @@
+.tbody
+{
+    max-height: 550px;
+    overflow-y: auto;
+    display: block;
+    overflow-x: hidden;
+}
+.tbody::-webkit-scrollbar
+{
+    width: 10px;
+}
+.tbody::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.tbody::-webkit-scrollbar-thumb {
+    background: #cccaca;
+    border-radius: 10px;
+}
+
+.tbody::-webkit-scrollbar-thumb:hover {
+    background: #918e8e;
+}
+canvas{
+    display: none;
+}
